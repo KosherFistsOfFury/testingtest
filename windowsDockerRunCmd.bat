@@ -6,5 +6,4 @@ docker run ^
 -v /var/run/docker.sock:/var/run/docker.sock ^
 -v /Users/zgartner:/home ^
 jenkinsci/blueocean
---name jenkins-tutorials
-@pause
+REM @pause
