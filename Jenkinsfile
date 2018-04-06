@@ -9,8 +9,11 @@ pipeline {
     stage('Deliver') {
       steps {
         echo 'This is the Deliver step.'
-        sh '''git checkout production
-git merge origin/master -m \'MERGE Auto from master step pass\''''
+        sh '''git checkout master
+git add -A
+git reset -- Jenkinsfile
+git checkout production
+git merge origin/master -m \'MERGE Auto from masterstep pass\''''
       }
     }
   }
