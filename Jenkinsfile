@@ -9,6 +9,8 @@ pipeline {
     stage('Deliver') {
       steps {
         echo 'This is the Deliver step.'
+        sh '''git checkout production
+git merge origin/master -m \'MERGE Auto from master step pass\''''
       }
     }
   }
