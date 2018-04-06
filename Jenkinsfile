@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        timestamps()
+        echo 'This is the Test stage.'
       }
     }
     stage('Deliver') {
       steps {
-        timestamps()
+        echo 'This is the Deliver step.'
       }
     }
   }
