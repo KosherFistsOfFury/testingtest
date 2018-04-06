@@ -9,6 +9,9 @@ pipeline {
     stage('Deliver') {
       steps {
         echo 'This is the Deliver step.'
+        sh '''$ git checkout master
+$ git merge develop -m \'MERGE Auto from deliver step pass\'
+$ git push git@github.com:KosherFistsOfFury/testingtest.git'''
       }
     }
   }
