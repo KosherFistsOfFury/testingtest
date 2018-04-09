@@ -12,7 +12,7 @@ pipeline {
         sh '''git checkout develop
 git add -A
 git reset -- Jenkinsfile
-git checkout origin/master
+git checkout master
 git merge origin/develop -m \'MERGE Auto from deliver step pass\''''
       }
     }
