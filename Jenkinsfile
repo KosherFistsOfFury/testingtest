@@ -20,7 +20,7 @@ if [[ "$BRANCH" == "develop" ]]; then
   
   echo \'AUTO-MERGE from Develop to Master\';
   exit 1;
-elif
+elif [[ "$BRANCH" == "master" ]]; then
   git checkout master
   git add -A
   git reset -- Jenkinsfile
