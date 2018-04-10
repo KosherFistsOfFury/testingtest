@@ -22,7 +22,7 @@ git add -A
 git reset -- Jenkinsfile
 git checkout production
 git merge master -m \'MERGE Auto from masterstep pass\''''
->>>>>>> f1cae9346343903f618d015e94f489b4ed996738
+>>>>>>> 835a29054cd3a5b0790c5b211894d31a4bbbd363
       }
     }
   }
